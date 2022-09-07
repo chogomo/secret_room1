@@ -6,49 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pianist room</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
-        }
-
-        .main_wrap{
-            background-color: #aaa;
-            width: 1920px;
-            height: 937px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .gameW{
-            background-color: #fff;
-            width: 1620px;
-            height: 837px;
-            border: 5px solid black;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="secret.css">
 </head>
 <body>
     <div class="main_wrap" id="main_wrap">
         <div class="gameW">
-            <div class="start"></div>
-            <div class="ui"></div>
-            <div class="piano"></div>
-            <div class="key"></div>
-            <div class="bed">
-                <div class="pillow"></div>
-                <div class="diary"></div>
-            </div>
-            <div class="diary_page"></div>
-            <div class="table"></div>
-            <div class="drawer"></div>
             <div class="door"></div>
+            <div class="panting">
+                <img src="image/panting.png" alt="panting">
+            </div>
+            <div class="music_teach"></div>
+            <div class="window"></div>
+            <div class="table">
+                <img src="image/table.png" alt="table">
+            </div>
+            <div class="bed"></div>
+            <div class="diary">
+                <img src="image/book.png" alt="diary">
+            </div>
+            <div class="pillow">
+                <img src="image/pillow.png" alt="pillow">
+            </div>
+            <div class="piano-box">
+                <img id="pbox" src="image/piano-box.png" alt="pbox1">
+            </div>
+            <!-- 透明感應方塊 -->
+            <div class="music"></div>
+            <div class="piano_key"></div>
+            <!-- 道具區 -->
+            <div class="ui">
+                <div class="arrow"></div>
+                <div class="all_box">
+                    <div class="ui_box"></div>
+                    <div class="ui_box"></div>
+                    <div class="ui_box"></div>
+                    <div class="ui_box"></div>
+                </div>
+                <div class="arrow2"></div>
+            </div>
+            <div class="people">
+                <img src="image/people.png" alt="people">
+            </div>
+            <div class="dialogue"></div>
+            <!-- 事件 -->
+            <div class="hint music_teach"></div>
+            <div class="hint sheet_music"></div>
+            <div class="hint piano">
+                <div class="allkeys">
+                    <a class="pkeys" href="javascript:;"></a>
+                    <a class="pkeys" href="javascript:;"></a>
+                    <a class="pkeys" href="javascript:;"></a>
+                    <a class="pkeys" href="javascript:;"></a>
+                    <a class="pkeys" href="javascript:;"></a>
+                    <a class="pkeys" href="javascript:;"></a>
+                    <a class="pkeys" href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="hint piano_box_event">
+                <img class="diary_key" src="image/diary_key.png" alt="diarykey">
+            </div>
+            <div class="hint diary_big"></div>
+            <div class="hint drawer">
+                <div class="passbox">
+                    <img src="image/0.png" alt="0">
+                    <img src="image/1.png" alt="1">
+                    <img src="image/2.png" alt="2">
+                    <img src="image/3.png" alt="3">
+                    <img src="image/4.png" alt="4">
+                    <img src="image/5.png" alt="5">
+                    <img src="image/6.png" alt="6">
+                    <img src="image/7.png" alt="7">
+                    <img src="image/8.png" alt="8">
+                    <img src="image/9.png" alt="9">
+                </div>
+                <div class="passbox">
+                    <img src="image/0.png" alt="0">
+                    <img src="image/1.png" alt="1">
+                    <img src="image/2.png" alt="2">
+                    <img src="image/3.png" alt="3">
+                    <img src="image/4.png" alt="4">
+                    <img src="image/5.png" alt="5">
+                    <img src="image/6.png" alt="6">
+                    <img src="image/7.png" alt="7">
+                    <img src="image/8.png" alt="8">
+                    <img src="image/9.png" alt="9">
+                </div>
+                <div class="passbox">
+                    <img src="image/0.png" alt="0">
+                    <img src="image/1.png" alt="1">
+                    <img src="image/2.png" alt="2">
+                    <img src="image/3.png" alt="3">
+                    <img src="image/4.png" alt="4">
+                    <img src="image/5.png" alt="5">
+                    <img src="image/6.png" alt="6">
+                    <img src="image/7.png" alt="7">
+                    <img src="image/8.png" alt="8">
+                    <img src="image/9.png" alt="9">
+                </div>
+                <div class="passbox">
+                    <img src="image/0.png" alt="0">
+                    <img src="image/1.png" alt="1">
+                    <img src="image/2.png" alt="2">
+                    <img src="image/3.png" alt="3">
+                    <img src="image/4.png" alt="4">
+                    <img src="image/5.png" alt="5">
+                    <img src="image/6.png" alt="6">
+                    <img src="image/7.png" alt="7">
+                    <img src="image/8.png" alt="8">
+                    <img src="image/9.png" alt="9">
+                </div>
+            </div>
+            <div class="hint drawer_open">
+                <img class="door_key" src="image/door_key.png" alt="door_key">
+            </div>
+            <div class="cross"></div>
         </div>
     </div>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
     <script src="tool_escape.js"></script>
 </body>
 </html>
